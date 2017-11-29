@@ -12,8 +12,7 @@ COPY . /tmp/
 
 # Download and install the test repository itself
 RUN \
-  git clone https://github.com/cdetrio/interfaces             && \
-  cd interfaces                                               && \
+  cd /tmp/interfaces                                               && \
   cp -a rpc-specs-tests/. /                                   && \
   mv /configs/bcRPC_API_Test.json /bcRPC_API_Test.json
 
